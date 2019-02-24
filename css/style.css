@@ -1,0 +1,50 @@
+/* Doodle Stage */
+#stage {
+  height: 600px;
+  width: 800px;
+}
+
+.whiskey {
+    height: 95%;
+    width: 100%;
+    margin: auto;
+    stroke: black;
+/*     stroke-width: 10px; */
+    fill: transparent;
+
+    stroke-dasharray: 3350; 
+    -webkit-animation: whiskey-animation 20s infinite; 
+            animation: whiskey-animation 20s infinite;
+}
+@-webkit-keyframes whiskey-animation {
+    0% {
+        stroke-dashoffset: -3350;
+    }
+    35% {
+        stroke-dashoffset: 0;   
+    }
+    65% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -3350;
+    }
+
+}
+@keyframes whiskey-animation {
+    0% {
+        stroke-dashoffset: -3350;
+    }
+    35% {
+        stroke-dashoffset: 0;   
+    }
+    65% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -3350;
+    }
+
+}
+
+
